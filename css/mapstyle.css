@@ -1,0 +1,66 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Sidebar Styling */
+.container {
+    width: 25%;
+    height: 100%;
+    line-height: 35px;
+    color: white;
+    background: black;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+}
+.options-box {
+    height: 100%;
+    display: inline-block;
+    overflow: auto;
+}
+
+ul {
+    height: 100%;
+    list-style-type: None;
+}
+li {
+    border-bottom: 1px solid white;;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.192);
+    position: relative;
+    right: 20px;
+}
+li:hover, li:checked {
+    cursor: pointer;
+}
+/* Adding Scroll bar*/
+.options-box::-webkit-scrollbar {
+    width: 6px;
+    background-color: black;
+}
+.options-box::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+/* Map styling */
+#map {
+    bottom: 0px;
+    height: 100%;
+    left: 27%;
+    position: absolute;
+    right: 0px;
+    color: black;
+}
+
+/* Customize for mobile devices */
+@media screen and (max-width: 750px){
+    .container {
+        width: 50%;
+    }
+    #map {
+        z-index: -1;
+    }
+}
